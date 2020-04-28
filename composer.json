@@ -14,7 +14,7 @@
     "require": {
         "php": "^7.1.3",
         "symfony/framework-bundle": "^4.3 || ^5.0",
-        "gedmo/doctrine-extensions": "^2.3.4"
+        "gedmo/doctrine-extensions": "dev-nestedsetmods-updated-1.4.0"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^4.4",
@@ -25,6 +25,9 @@
         "doctrine/mongodb-odm-bundle": "to use the MongoDB ODM extensions",
         "symfony/mime": "To use the Mime component integration for Uploadable"
     },
+    "repositories": [
+        { "type": "vcs", "url": "git@github.com:pmishev/DoctrineExtensions.git" }
+    ],
     "autoload": {
         "psr-4": { "Stof\\DoctrineExtensionsBundle\\": "" }
     },
